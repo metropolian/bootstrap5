@@ -1,5 +1,6 @@
 dist/
-js/dist
+js/dist/
+ks/tests/
 
 # Ignore docs files
 /_site/
