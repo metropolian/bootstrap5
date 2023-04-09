@@ -1,4 +1,5 @@
 dist/
+js/dist
 
 # Ignore docs files
 /_site/
