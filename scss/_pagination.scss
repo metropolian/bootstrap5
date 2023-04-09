@@ -26,6 +26,7 @@
   @include list-unstyled();
 }
 
+.pagination>li>a,
 .page-link {
   position: relative;
   display: block;
@@ -70,6 +71,7 @@
   }
 }
 
+.pagination>li,
 .page-item {
   &:not(:first-child) .page-link {
     margin-left: $pagination-margin-start;

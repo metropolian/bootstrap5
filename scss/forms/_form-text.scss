@@ -2,6 +2,8 @@
 // Form text
 //
 
+.static-
+.form-control-static,
 .form-text {
   margin-top: $form-text-margin-top;
   @include font-size($form-text-font-size);

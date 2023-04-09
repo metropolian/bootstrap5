@@ -3,6 +3,7 @@
 // Replaces the browser default select with a custom one, mostly pulled from
 // https://primer.github.io/.
 
+select.form-control,
 .form-select {
   --#{$prefix}form-select-bg-img: #{escape-svg($form-select-indicator)};
 
@@ -55,6 +56,7 @@
   }
 }
 
+select.form-control-sm,
 .form-select-sm {
   padding-top: $form-select-padding-y-sm;
   padding-bottom: $form-select-padding-y-sm;
@@ -63,6 +65,7 @@
   @include border-radius($form-select-border-radius-sm);
 }
 
+select.form-control-lg,
 .form-select-lg {
   padding-top: $form-select-padding-y-lg;
   padding-bottom: $form-select-padding-y-lg;

@@ -2,6 +2,7 @@
 // Base styles
 //
 
+.panel,
 .card {
   // scss-docs-start card-css-vars
   --#{$prefix}card-spacer-y: #{$card-spacer-y};
@@ -66,6 +67,7 @@
   }
 }
 
+.panel-body,
 .card-body {
   // Enable `flex-grow: 1` for decks and groups so that card blocks take up
   // as much space as possible, ensuring footers are aligned to the bottom.
@@ -74,21 +76,25 @@
   color: var(--#{$prefix}card-color);
 }
 
+.panel-title,
 .card-title {
   margin-bottom: var(--#{$prefix}card-title-spacer-y);
   color: var(--#{$prefix}card-title-color);
 }
 
+.panel-subtitle,
 .card-subtitle {
   margin-top: calc(-.5 * var(--#{$prefix}card-title-spacer-y)); // stylelint-disable-line function-disallowed-list
   margin-bottom: 0;
   color: var(--#{$prefix}card-subtitle-color);
 }
 
+.panel-text,
 .card-text:last-child {
   margin-bottom: 0;
 }
 
+.panel-link,
 .card-link {
   &:hover {
     text-decoration: if($link-hover-decoration == underline, none, null);
@@ -103,6 +109,7 @@
 // Optional textual caps
 //
 
+.panel-heading,
 .card-header {
   padding: var(--#{$prefix}card-cap-padding-y) var(--#{$prefix}card-cap-padding-x);
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
@@ -115,6 +122,7 @@
   }
 }
 
+.panel-footer,
 .card-footer {
   padding: var(--#{$prefix}card-cap-padding-y) var(--#{$prefix}card-cap-padding-x);
   color: var(--#{$prefix}card-cap-color);
@@ -131,6 +139,8 @@
 // Header navs
 //
 
+.panel-heading-tabs,
+.panel-header-tabs,
 .card-header-tabs {
   margin-right: calc(-.5 * var(--#{$prefix}card-cap-padding-x)); // stylelint-disable-line function-disallowed-list
   margin-bottom: calc(-1 * var(--#{$prefix}card-cap-padding-y)); // stylelint-disable-line function-disallowed-list
@@ -143,12 +153,15 @@
   }
 }
 
+.panel-heading-pills,
+.panel-header-pills,
 .card-header-pills {
   margin-right: calc(-.5 * var(--#{$prefix}card-cap-padding-x)); // stylelint-disable-line function-disallowed-list
   margin-left: calc(-.5 * var(--#{$prefix}card-cap-padding-x)); // stylelint-disable-line function-disallowed-list
 }
 
 // Card image
+.panel-img-overlay,
 .card-img-overlay {
   position: absolute;
   top: 0;
@@ -159,17 +172,20 @@
   @include border-radius(var(--#{$prefix}card-inner-border-radius));
 }
 
+.panel-img,
 .card-img,
 .card-img-top,
 .card-img-bottom {
   width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
 }
 
+.panel-img,
 .card-img,
 .card-img-top {
   @include border-top-radius(var(--#{$prefix}card-inner-border-radius));
 }
 
+.panel-img,
 .card-img,
 .card-img-bottom {
   @include border-bottom-radius(var(--#{$prefix}card-inner-border-radius));
@@ -180,6 +196,7 @@
 // Card groups
 //
 
+.panel-group,
 .card-group {
   // The child selector allows nested `.card` within `.card-group`
   // to display properly.

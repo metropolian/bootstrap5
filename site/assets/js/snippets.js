@@ -20,7 +20,7 @@
   // Tooltips
   // --------
   // Instantiate all tooltips in a docs or StackBlitz
-  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  document.querySelectorAll('[data-toggle="tooltip"]')
     .forEach(tooltip => {
       new bootstrap.Tooltip(tooltip)
     })
@@ -29,7 +29,7 @@
   // Popovers
   // --------
   // Instantiate all popovers in docs or StackBlitz
-  document.querySelectorAll('[data-bs-toggle="popover"]')
+  document.querySelectorAll('[data-toggle="popover"]')
     .forEach(popover => {
       new bootstrap.Popover(popover)
     })
@@ -84,7 +84,7 @@
     wrapper.innerHTML = [
       `<div class="alert alert-${type} alert-dismissible" role="alert">`,
       `   <div>${message}</div>`,
-      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+      '   <button type="button" class="btn-close" data-dismiss="alert" aria-label="Close"></button>',
       '</div>'
     ].join('')
 
@@ -103,7 +103,7 @@
   // Carousels
   // --------
   // Instantiate all non-autoplaying carousels in docs or StackBlitz
-  document.querySelectorAll('.carousel:not([data-bs-ride="carousel"])')
+  document.querySelectorAll('.carousel:not([data-ride="carousel"])')
     .forEach(carousel => {
       bootstrap.Carousel.getOrCreateInstance(carousel)
     })
@@ -140,8 +140,8 @@
     exampleModal.addEventListener('show.bs.modal', event => {
       // Button that triggered the modal
       const button = event.relatedTarget
-      // Extract info from data-bs-* attributes
-      const recipient = button.getAttribute('data-bs-whatever')
+      // Extract info from data-* attributes
+      const recipient = button.getAttribute('data-whatever')
       // If necessary, you could initiate an Ajax request here
       // and then do the updating in a callback.
 

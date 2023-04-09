@@ -9,7 +9,11 @@
 }
 
 @if $enable-grid-classes {
-  .row {
+  
+  .row,
+  .form-row,
+  .form-group
+  {
     @include make-row();
 
     > * {

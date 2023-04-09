@@ -100,6 +100,7 @@
   margin-bottom: 0;
   list-style: none;
 
+  >li>a,
   .nav-link {
     &.active,
     &.show {
@@ -147,6 +148,7 @@
 }
 
 // Button for toggling the navbar when in its collapsed state
+.navbar-toggle,
 .navbar-toggler {
   padding: var(--#{$prefix}navbar-toggler-padding-y) var(--#{$prefix}navbar-toggler-padding-x);
   @include font-size(var(--#{$prefix}navbar-toggler-font-size));

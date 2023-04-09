@@ -212,3 +212,7 @@ textarea {
   &.form-control-sm { height: $input-height-sm; }
   &.form-control-lg { height: $input-height-lg; }
 }
+
+.form-group {
+  margin-bottom: 1rem;
+}
